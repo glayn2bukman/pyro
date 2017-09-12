@@ -18,16 +18,24 @@ COLOR_TEMPERATURES = { // all temperatures in K
 	'ffebdc': 5400}
 
 function changeImage(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
+    try{
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-        reader.onload = function (e) {
-            var img = document.getElementById("img");
-            img.setAttribute("src", e.target.result)
-        };
+            reader.onload = function (e) {
+                var img = document.getElementById("img");
+                img.setAttribute("src", e.target.result)
+            };
 
-        reader.readAsDataURL(input.files[0]);
+            reader.readAsDataURL(input.files[0]);
+        }
+    } catch(e){
+        alert(e);
     }
+}
+
+window.onload = function(){
+    document.addEventListener("deviceready", changeImage2, false);
 }
 
 function changeImage2(){
