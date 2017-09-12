@@ -34,23 +34,6 @@ function changeImage(input) {
     }
 }
 
-window.onload = function(){}
-
-document.addEventListener("deviceready", changeImage2, false);
-function changeImage2(){
-    document.getElementById("testbtn").onclick = changeImage2;
-    try {
-        navigator.camera.getPicture(function(result){
-        console.log(result);
-        },function(error){
-        console.log(error);
-        },{
-        sourceType : Camera.PictureSourceType.CAMERA
-        });
-    }
-    catch (e){alert(e);}
-}
-
 function componentToHex(c) {
     var hex = c.toString(16);
     return hex.length == 1 ? "0" + hex : hex;
