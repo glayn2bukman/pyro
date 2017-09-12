@@ -29,7 +29,7 @@
     <plugin name="cordova-plugin-whitelist" />
 
     <!-- plugins to add custom permisions -->
-    <plugin spec="http://github.com/don/cordova-filechooser.git" source="git" />
+    <plugin name="cordova-plugin-mfilechooser" /> <!-- this will open up a file chooser -->
 
 </widget>
 

@@ -31,9 +31,12 @@ function changeImage(input) {
 }
 
 function changeImage2(){
-    fileChooser.open(function(uri) {
-	    alert(uri);
-    });
+    window.plugins.mfilechooser.open([], function (uri) {          
+          alert(uri);          
+        }, function (error) {
+          
+            alert(error);        
+        });
 }
 function componentToHex(c) {
     var hex = c.toString(16);
