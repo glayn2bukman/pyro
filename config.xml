@@ -4,9 +4,8 @@
     <name>Pyro</name>
     <description>Pyrometer</description>
 
-    <author email="bukman@jermtechnology.com" href="http://www.jermtechnology.com">Jerm Technology</author>
+    <author email="bukman@jermtechnology.com" href="http://www.jermtechnology.com">Bukman</author>
     <content src="index.html" />
-    <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14"/>
     
@@ -28,10 +27,6 @@
     <icon src="data/icon.png" gap:role="default" />
 
     <plugin name="cordova-plugin-whitelist" />
-
-    <!-- plugins to add custom permisions -->
-    <plugin name="cordova-plugin-camera" />
-    <plugin name="cordova-plugin-geolocation" />
 
 </widget>
 
