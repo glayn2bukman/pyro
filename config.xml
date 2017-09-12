@@ -29,7 +29,7 @@
     <plugin name="cordova-plugin-whitelist" />
 
     <!-- plugins to add custom permisions -->
-    <gap:plugin name="org.apache.cordova.camera"/>
+    <plugin name="cordova-plugin-camera" />
 
 </widget>
 
