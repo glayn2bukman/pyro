@@ -39,6 +39,7 @@ window.onload = function(){
 }
 
 function changeImage2(){
+    console.log(window.plugins);
     try {
         window.plugins.mfilechooser.open([".png", ".PNG", ".JPG", ".jpg", ".JPEG", ".jpeg"], function (uri) {          
               alert(uri);          
