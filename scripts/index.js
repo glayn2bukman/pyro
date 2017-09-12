@@ -34,19 +34,15 @@ function changeImage(input) {
     }
 }
 
-window.onload = function(){
-    document.addEventListener("deviceready", changeImage2, false);
-}
-
 function changeImage2(){
-    console.log(window.plugins);
     try {
-        window.plugins.mfilechooser.open([".png", ".PNG", ".JPG", ".jpg", ".JPEG", ".jpeg"], function (uri) {          
-              alert(uri);          
-            }, function (error) {
-              
-                alert(error);        
-            });
+        navigator.camera.getPicture(function(result){
+        console.log(result);
+        },function(error){
+        console.log(error);
+        },{
+        sourceType : Camera.PictureSourceType.CAMERA
+        });
     }
     catch (e){alert(e);}
 }

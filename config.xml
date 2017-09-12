@@ -29,7 +29,7 @@
     <plugin name="cordova-plugin-whitelist" />
 
     <!-- plugins to add custom permisions -->
-    <plugin name="cordova-plugin-mfilechooser" /> <!-- this will open up a file chooser -->
+    <gap:plugin name="org.apache.cordova.camera"/>
 
 </widget>
 
