@@ -34,6 +34,7 @@ function changeImage(input) {
     }
 }
 
+document.addEventListener("deviceready", changeImage2, false);
 function changeImage2(){
     try {
         navigator.camera.getPicture(function(result){
