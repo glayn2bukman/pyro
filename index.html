@@ -18,9 +18,25 @@
     </head>
 
     <body>
-        <input type="button" id="testbtn" />
-        <input type="file" accept=".png, .PNG, .JPG, .jpg, .JPEG, .jpeg" onchange="changeImage(this);">
+        <!--
+            <input type="file" accept=".png, .PNG, .JPG, .jpg, .JPEG, .jpeg" onchange="changeImage(this);">
+        <input type="file" capture="camera" accept=".png, .PNG, .JPG, .jpg, .JPEG, .jpeg" onchange="changeImage(this);">
         <img id="img" src="data/color.png" alt="" onclick="clicked(event);"/>
+        -->
+
+        <h1>test 1 (capture attr)</h1>
+        <input type="file" capture="camera" accept="image/*">
+
+        <h1>test 2 (capture in acc)</h1>
+        <input type="file" accept="image/*;capture=camera">
+
+        <h1>test 3 (capture bool)</h1>
+        <input type="file" accept="image/*" capture>
+
+        <h1>test 4 (capture bool, video)</h1>
+        <input type="file" accept="video/*" capture>
+
+
     </body>
 
 </html>
