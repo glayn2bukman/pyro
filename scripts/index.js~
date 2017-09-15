@@ -88,8 +88,8 @@ function get_closest(color)
       }
     }
 
-    if (Math.max(...tmp)>100) {return temp+'K (large estimate)';}
-    else{ return temp+"K";}
+    if (Math.max(...tmp)>100) {return temp+' (large estimate)';}
+    else{ return temp;}
 
 }
 
@@ -106,7 +106,7 @@ function clicked(e){
 
     swal({
       title: "Temperature",
-      text: get_closest(hex),
+      text: ""+get_closest(hex),
       type: "info",
       confirmButtonColor: "#009494",
     });
