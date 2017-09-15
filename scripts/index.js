@@ -1,3 +1,20 @@
+function changeImage(input) {
+    try{
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                var img = document.getElementById("img");
+                img.setAttribute("src", e.target.result)
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    } catch(e){
+        alert(e);
+    }
+}
+
 function convert_figure_to_human_readable(figure)
 // this is my initial conception of this function. am sure it can be made more efficient(not that it isnt!)
 {
