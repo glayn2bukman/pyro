@@ -68,6 +68,9 @@ function get_estimate(color)
 }
 
 function clicked(e){
+    document.getElementById("pointer").style.left = (e.clientX-5)+"px";
+    document.getElementById("pointer").style.top = (e.clientY-5)+"px";
+
     var img = document.getElementById('img');
     var canvas = document.createElement('canvas');
     canvas.width = img.width;
